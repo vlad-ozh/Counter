@@ -1,0 +1,9 @@
+.clock {
+  text-align: center;
+}
+
+.clockTitle {
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: thick double #964b32;
+}

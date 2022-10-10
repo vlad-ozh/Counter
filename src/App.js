@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
+import {
+  CounterForm,
+  Counter,
+  Clock,
+} from './components'
 import './App.css';
 
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="counterBox">
+          <Clock />
+          <h1 className="counterBoxTitle">Counter Form</h1>
+          <CounterForm 
+            onIncrement={() => setCounter(counter + 1)}
+            onDecrement={() => setCounter(counter - 1)} 
+          />
+          <Counter count={counter}/>
+        </div>
+      </div>
     </div>
   );
 }

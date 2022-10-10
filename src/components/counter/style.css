@@ -1,0 +1,15 @@
+.counter {
+  text-align: center;
+}
+
+.counterTitle {
+  padding: 10px 0;
+}
+
+.countTrue {
+  color: #14c314;
+}
+
+.countFalse {
+  color: #f00;
+}

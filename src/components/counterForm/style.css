@@ -1,0 +1,36 @@
+.counterBoxForm {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 1px dashed #000;
+}
+
+.counterBoxForm button {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.counterBoxForm button:first-child {
+  background-color: #14c814;
+}
+
+.counterBoxForm button:first-child:hover {
+  background-color: #1b891b;
+  transform: translateY(-4px);
+}
+
+.counterBoxForm button:last-child {
+  background-color: #ef1313;
+}
+
+.counterBoxForm button:last-child:hover {
+  background-color: #a31717;
+  transform: translateY(-4px);
+}
