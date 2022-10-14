@@ -1,1 +1,1 @@
-export { CounterForm } from './CounterForm';
+export { CounterForm } from './view';

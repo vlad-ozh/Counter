@@ -1,9 +1,9 @@
 import React from 'react'
-import './style.css'
+import style from './style.module.scss'
 
 export function CounterForm(props) {
   return (
-    <form className="counterBoxForm" onSubmit={e => e.preventDefault()}>
+    <form className={style.counterBoxForm} onSubmit={e => e.preventDefault()}>
       <button onClick={props.onIncrement}>increment</button>
       <button onClick={props.onDecrement}>decrement</button>
     </form>

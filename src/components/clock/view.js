@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import style from './style.module.scss'
 
 export class Clock extends React.Component {
   
@@ -47,8 +47,8 @@ export class Clock extends React.Component {
 
   render() {
     return (
-      <div className='clock'>
-        <h2 className='clockTitle'>
+      <div className={style.clock}>
+        <h2 className={style.clockTitle}>
           {this.renderCurrentDate()}
           {'.....'}
           {this.renderCurrentTime()}

@@ -1,3 +1,4 @@
-export { CounterForm } from './counterForm';
-export { Clock } from './clock';
-export { Counter } from './counter';
+export { App } from './App';
+export { CounterForm } from './CounterForm';
+export { Clock } from './Clock';
+export { Counter } from './Counter';
